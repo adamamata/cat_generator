@@ -18,13 +18,11 @@ const addCatPicture = function (){
     document.getElementById('cat-name').value = ''; //Clearing the input field 
 
     const catCardsArray = document.querySelectorAll('.cat-cards');
-    catCardsArray.forEach((cat) => {
-        cat.addEventListener('click', removeCat);
-    })
+    
 }
 
 const removeCat = function(e){
-    
+
 }
 
 function generateNumber(){ //Generating random number function 
