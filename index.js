@@ -17,12 +17,13 @@ const addCatPicture = function (){
     
     document.getElementById('cat-name').value = ''; //Clearing the input field 
 
+    //Removing a cat-card div from the page 
     const catCardsArray = document.querySelectorAll('.cat-cards');
-    
-}
-
-const removeCat = function(e){
-
+        catCardsArray.forEach((cat) => {
+            cat.addEventListener('click', function(event){
+                event.currentTarget.remove();
+            });
+        })
 }
 
 function generateNumber(){ //Generating random number function 
